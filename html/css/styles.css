@@ -1,0 +1,113 @@
+/****************************************************************************
+ * styles.css
+ *
+ * CSCI-E52 Final Project, 2012
+ * Anna Ntenta
+ * anna.e.mckelvey@gmail.com
+ *
+ * Global CSS.
+ ***************************************************************************/
+
+#top
+{
+    /* left-align contents */
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#top textarea:focus, input[type="text"]:focus
+{   
+    /* change textarea border color from glowing w. shadow to grey w/o glow */
+    border-color: #cccccc;  
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none; 
+          box-shadow: none; 
+}
+
+#middle
+{
+    /* center contents */
+    text-align: left;
+    margin-left: 20px;
+}
+
+#bottom{
+    /* shrink bottom's font size */
+    font-size: small;
+
+    /* surround with whitespace */
+    margin: 20px;
+
+    /* center contents */
+    text-align: center;
+}
+
+#bottom .nav{
+    display: inline-block;
+}
+
+#apology{
+/* center contents */
+    text-align: center;
+}
+
+/* appearance of sliders */
+input[type=range] 
+{
+    -webkit-appearance: none;
+    background-color: #f5f5f5;
+    width: 200px;
+    height:10px;
+    cursor: pointer;
+}
+
+/* appearance of slider thumb */
+input[type="range"]::-webkit-slider-thumb 
+{
+     -webkit-appearance: none;
+    background-color: #99B3CC;
+    opacity: 0.5;
+    width: 5px;
+    height: 20px;
+    cursor: pointer;
+}​
+
+a img {
+    margin:10px; margin-left: 20px; 
+}
+
+/* appearance of maps */
+#map
+{
+    width:420px; 
+    height:380px; 
+    margin-left: 10px; 
+    border:4px solid #99B3CC;
+}
+
+td {
+    vertical-align: top;  
+    padding: 10px; 
+}
+
+table {
+    padding: 20px;
+}
+
+#address_list {
+    width: 430px; 
+    font-family:arial, verdana, sans-serif; 
+    font-size: 130%;  
+    display: list-item; 
+    color: #99B3CC;  
+    cursor: pointer; 
+    position:relative; 
+    margin: 0; 
+    list-style-type: none;
+}
+
+#address_list li:hover {
+background-color: #f5f5f5;
+}
+

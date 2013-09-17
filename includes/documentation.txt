@@ -1,0 +1,44 @@
+ ******************************************************************
+ * documentation.txt
+ *
+ * CSCI-E52 Final Project, 2012
+ * Anna Ntenta
+ * anna.e.mckelvey@gmail.com
+ *
+ * User manual for website "Addressay"
+ ******************************************************************
+
+All files necessary to run the web page are in the vhosts/project/ folder, including 
+the exported database "project.sql" which can be found in project/includes.
+To use the web page, put the files on a local host and use as url "project/index.php".
+
+The project implements a simple website that lets anyone rate any address that the Google Maps
+Geocoder service can translate to latitude and longitude. No login is necessary. One can, 
+however only rate the same address once within a 24-hour window.
+
+When trying the website, any address can be typed in and rated. However, since the database
+is populated with ratings on the downtow San Francisco area, some suggestions are:
+- 4 Mint Plaza, San Francisco 94103, CA (or any substring thereof.)
+- 941 Mission St, San Francisco.
+- 16 12th St., San Francisco.
+- etc...
+
+In order to submt an address for rating, one can either click on an address in the suggestion list 
+generated from items returned by the Geocoding service, or one can press "enter" in the search box 
+to get the first item in the list.
+
+Once an address is submitted, the map will show the address marked with a red marker, and eight sliders
+will appear on the page. Choose values beween 1 and 100 (default is 50) and click "submit" to rate this 
+address.
+
+The result of the rating shows up in a table. You can see what you just submitted and an average for 
+the nearby (~0.5 mile) area for each parameter. On the map, the address you rated will show up as a red marker,
+and any ratings nearby will show as blue markers. You can drag as well as zoom in/out on the map.
+
+To rate a new address, click on the link above the map.
+
+The links in the footer are just for show at the moment, as they are more about text/content than about 
+implementing functions.
+
+
+

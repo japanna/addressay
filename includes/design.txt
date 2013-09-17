@@ -1,0 +1,42 @@
+******************************************************************
+ * design.txt
+ *
+ * CSCI-E52 Final Project, 2012
+ * Anna Ntenta
+ * anna.e.mckelvey@gmail.com
+ *
+ * Discusseds design decisions
+ ******************************************************************
+ 
+ Model-View-Controller:
+ For this project, I indtended to use the MVC architecture as far as possible.
+ As per the example of Pset 7, I kept HTML script separate from CSS styles, JavaScript 
+ and PHP code.
+ 
+ Database:
+ I've choosen to use two tables: One table ("reviewed") storing each and every rating as a 
+ separate row, and one table ("averages") in which each row has a unique latlng value.
+ The choice was made because I wanted to be able to query the database for an individual 
+ submission as well as be able to get aggregated scores for a latlng value without having
+ to search the whole table of individual entries. The "reviewed" table does not have an Index,
+ which in hindsight would probably have been good as the table grows, but "averages", which 
+ is queried often, has ID as index.
+ 
+ Style:
+ I spent very little time on CSS, as I quickly discovered at the beginning of the project
+ that one can style a page ad infinitum and still not be done. I tried to make the web page(s)
+ as painless as possible to look at by padding and lining things up as much as possible,
+ but the pages are still a bit jumpy.
+ 
+ Design:
+ I wanted the page to be as asynchronous as possible, and I fought a lot with the suggestion list
+ of addresses that is generated on each "keydown" in the text box. I also wanted the list to be 
+ navigable by key-command instead of only mouse-click, but there was no time. I wanted the markers on 
+ the "results-map" to be clickable so that an info window with that address' average ratings would come up. 
+ This would not have been too hard to implement, but again there was no time.
+ Unfortunately, I believe I spent a lot of my time trying to figure out how to pass JavaScript/HTML
+ data to PHP, and then how to access PHP data in JavScript again. Once I discovered JSON-encode,
+ the latter was embarassingly easy. I did however not have time to figure out in what ways I
+ could have used AJAX-requests to submit and receive data in order to accomplish the former.
+ My solution of generating hidden input fields and populating their values is addmittedly ugly,
+ and I'm going to keep working on a more elegant solution after submission.
