@@ -23,6 +23,6 @@
     setcookie("", "", $expires ); 
     
     // render landing page
-    render("search.php", ["title" => ""]);
+    render("search.php", ["title" => "a"]);
 
 ?>
